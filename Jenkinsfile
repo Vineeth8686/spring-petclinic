@@ -12,9 +12,18 @@ pipeline{
         }
 
         stage("Docker Build"){
-        agent any
+        agent {
+            label 'master'
+        }
         steps{
             sh "docker build -t vineeth8686/spring-petclinic:latest ."
+        }
+        }
+
+        stage("Docker Push"){
+        agent any
+        steps{
+            wit
         }
         }
 
