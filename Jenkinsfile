@@ -11,14 +11,14 @@ pipeline{
 
         }
 
-        stage("Docker Build"){
-        agent {
-            label 'master'
-        }
-        steps{
-            sh "docker build -t vineeth8686/spring-petclinic:latest ."
-        }
-        }
+        // stage("Docker Build"){
+        // agent {
+        //     label 'master'
+        // }
+        // steps{
+        //     sh "docker build -t vineeth8686/spring-petclinic:latest ."
+        // }
+        // }
 
 
         }
